@@ -24,10 +24,10 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButtonWrite = New System.Windows.Forms.Button()
+        Me.ButtonRead = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.ButtonSort = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -39,7 +39,7 @@ Partial Class Form1
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(317, 76)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(342, 65)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(130, 20)
         Me.NumericUpDown1.TabIndex = 0
@@ -47,51 +47,51 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(218, 79)
+        Me.Label1.Location = New System.Drawing.Point(243, 68)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(87, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Enter a Number: "
         '
-        'Button1
+        'ButtonWrite
         '
-        Me.Button1.Location = New System.Drawing.Point(467, 69)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 37)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Write"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonWrite.Location = New System.Drawing.Point(492, 58)
+        Me.ButtonWrite.Name = "ButtonWrite"
+        Me.ButtonWrite.Size = New System.Drawing.Size(100, 37)
+        Me.ButtonWrite.TabIndex = 2
+        Me.ButtonWrite.Text = "Write"
+        Me.ButtonWrite.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ButtonRead
         '
-        Me.Button2.Location = New System.Drawing.Point(217, 122)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 37)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Read"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonRead.Location = New System.Drawing.Point(242, 111)
+        Me.ButtonRead.Name = "ButtonRead"
+        Me.ButtonRead.Size = New System.Drawing.Size(100, 37)
+        Me.ButtonRead.TabIndex = 3
+        Me.ButtonRead.Text = "Read"
+        Me.ButtonRead.UseVisualStyleBackColor = True
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(217, 181)
+        Me.ListBox1.Location = New System.Drawing.Point(242, 170)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(230, 147)
         Me.ListBox1.TabIndex = 4
         '
-        'Button3
+        'ButtonSort
         '
-        Me.Button3.Location = New System.Drawing.Point(217, 349)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 37)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Sort"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.ButtonSort.Location = New System.Drawing.Point(242, 338)
+        Me.ButtonSort.Name = "ButtonSort"
+        Me.ButtonSort.Size = New System.Drawing.Size(100, 37)
+        Me.ButtonSort.TabIndex = 5
+        Me.ButtonSort.Text = "Sort"
+        Me.ButtonSort.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(592, 82)
+        Me.Label2.Location = New System.Drawing.Point(617, 71)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(104, 13)
         Me.Label2.TabIndex = 6
@@ -100,7 +100,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(34, 129)
+        Me.Label3.Location = New System.Drawing.Point(59, 118)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(151, 26)
         Me.Label3.TabIndex = 7
@@ -110,7 +110,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(41, 347)
+        Me.Label4.Location = New System.Drawing.Point(66, 336)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(141, 39)
         Me.Label4.TabIndex = 8
@@ -121,7 +121,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(573, 81)
+        Me.Label5.Location = New System.Drawing.Point(598, 70)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(19, 13)
         Me.Label5.TabIndex = 9
@@ -130,7 +130,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(189, 134)
+        Me.Label6.Location = New System.Drawing.Point(214, 123)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(19, 13)
         Me.Label6.TabIndex = 10
@@ -139,7 +139,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(189, 361)
+        Me.Label7.Location = New System.Drawing.Point(214, 350)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(19, 13)
         Me.Label7.TabIndex = 11
@@ -156,10 +156,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.ButtonSort)
         Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonRead)
+        Me.Controls.Add(Me.ButtonWrite)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Name = "Form1"
@@ -172,10 +172,10 @@ Partial Class Form1
 
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents ButtonWrite As Button
+    Friend WithEvents ButtonRead As Button
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents ButtonSort As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
